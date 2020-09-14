@@ -52,9 +52,9 @@
                                                 <div class="modal-body">
                                                    
 
-                                                    <a class="btn btn-primary btn-lg btn-block"  href="{{ route('negacionlibro', ['iduserlibro' => $solicitud->id,'valor' => '1']) }}" >Bajo rating del usuario</a>
-                                                    <a class="btn btn-primary btn-lg btn-block"  href="{{ route('negacionlibro', ['iduserlibro' => $solicitud->id,'valor' => '2']) }}" >Me genera desconfianza</a>
-                                                    <a class="btn btn-primary btn-lg btn-block"  href="{{ route('negacionlibro', ['iduserlibro' => $solicitud->id,'valor' => '3']) }}" >Removeré el libro de mi biblioteca</a>
+                                                    <a class="btn btn-primary btn-lg btn-block"  href="{{ route('negacionlibro', ['id' => $solicitud->id,'valor' => '1']) }}" >Bajo rating del usuario</a>
+                                                    <a class="btn btn-primary btn-lg btn-block"  href="{{ route('negacionlibro', ['id' => $solicitud->id,'valor' => '2']) }}" >Me genera desconfianza</a>
+                                                    <a class="btn btn-primary btn-lg btn-block"  href="{{ route('negacionlibro', ['id' => $solicitud->id,'valor' => '3']) }}" >Removeré el libro de mi biblioteca</a>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-danger" data-dismiss="modal">CERRAR</button>
@@ -69,13 +69,13 @@
                               <div class="container">
                                 <div class="row">
                                     <div class=" col-md-9" style="text-align: left;">
-                                        <p>{{$solicitud->id_emisor}}</p>
+                                        <p>codigo: {{$solicitud->id_emisor}}</p>
                                         <p class="lead"><a  href="http://palabralab.test:81/user/{{$solicitud->name}}" class="">{{$solicitud->name}}</a> ha solicitado tu libro <span style="color:blue;">{{$solicitud->titulo}}</span> de tu biblioteca</p>
                                         
                                         <p class="lead" style="font-size: 10px;text-align: left;">{{$solicitud->created_at}}</p>    
                                     </div>
                                     <div class=" col-md-3">
-                                        <a class="btn btn-solicitud btn-lg"  href="{{ route('confirmacionlibro', ['iduserlibro' => $solicitud->id]) }}" >Aceptar</a>
+                                        <a class="btn btn-solicitud btn-lg"  href="{{ route('confirmacionlibro', ['id' => $solicitud->id]) }}" >Aceptar</a>
                                         <button type="button" class="btn btn-solicitud btn-lg" data-toggle="modal" data-target="#create-{{$solicitud->id}}"  href="#" >Rechazar</button>    
                                     </div>
                                 </div>

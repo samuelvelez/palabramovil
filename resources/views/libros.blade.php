@@ -132,8 +132,7 @@
                               <!--['idguest' => $idguest->id, 'idbook' => $idbook->id, 'idroom' => $idroom->id]-->
                               @else
                              
-                              <a type="button" style="" class="btn btn-desactivado"  href="{{ route('prestamo', ['iduserlibro' => Crypt::encrypt($libro->user_id), 'idlibro' => Crypt::encrypt($libro->id)]) }}" >¡Quiero Leerlo!</a>
-
+                              <a type="button" style="" class="btn btn-desactivado"  href="{{ route('prestamo', ['id' => Crypt::encrypt($libro->user_id), 'idlibro' => Crypt::encrypt($libro->id)]) }}" >¡Quiero Leerlo!</a>
 
 
                               @endif

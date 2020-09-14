@@ -242,8 +242,9 @@ input[type="text"]::placeholder { /* Firefox, Chrome, Opera */
     margin-top: -100px;
 }
 body #libros-sec{
-    background: linear-gradient( rgba(252, 198, 95, 0.8), rgba(252, 198, 95, 0.8) ), url('../images/fotolibros4.jpg');
-    background-color: #fcc65a;
+    background: rgb(241, 136, 53);
+    /*linear-gradient( rgba(252, 198, 95, 0.8), rgba(252, 198, 95, 0.8) ), url('../images/fotolibros4.jpg');
+    background-color: #fcc65a;*/
    
     background-position: center;
     background-repeat: no-repeat;

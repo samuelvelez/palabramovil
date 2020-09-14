@@ -59,7 +59,7 @@
                                 </div>                                                              
                                 <div class=" col-md-2">                                  
                                     @if(($solicitud->estado == 'aceptada' And $solicitud->estado_conversacion == 'pendiente'))
-                                        <a class="btn btn-desactivado" href="/messages/create/{{$solicitud->id}}">Enviar Mensaje</a>
+                                        <!--<a class="btn btn-desactivado" href="/messages/create/Crypt::encrypt({{$solicitud->id}})">Enviar Mensaje</a>-->
                                         
 
                                         <form action="{{ route('messages.create', Crypt::encrypt($solicitud->id)) }}" method="get">
@@ -69,6 +69,7 @@
                                         </form>
                                     @elseif(($solicitud->estado == 'aceptada' And $solicitud->estado_conversacion == 'iniciada'))
                                         <a href="/messages">Ver mensajes</a>
+                                        
                                     @else
                                     @endif
                                      <p class="lead" style="font-size: 12px;">{{$solicitud->created_at}}</p>                                   

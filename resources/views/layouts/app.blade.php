@@ -59,6 +59,10 @@ $(document).ready(function(){
       });
     } // End if
   });
+  $('input[type="file"]').change(function(e){
+        var fileName = e.target.files[0].name;
+        $('.custom-file-label').html(fileName);
+    });
 });
 </script>
 
@@ -71,7 +75,7 @@ $(document).ready(function(){
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!--{{ config('app.name', 'Laravel') }}-->
-                    <img style="width: 300px;" src="/images/logo-blanco.png">
+                    <img style="width: 300px;" src="/images/logo_new.png">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

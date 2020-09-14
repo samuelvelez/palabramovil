@@ -83,7 +83,7 @@
 									<input id="editar-btn" value="Editar" class="btn btn-secundario btn-block" >
 								</div>	
 								<div class="col-xs-12 col-sm-12 col-md-3">
-									<input type="submit" id="actua-btn" style='background-color:#262C60;border-color:#262C60;' value="Actualizar" class="btn btn-success btn-block" disabled>
+									<input type="submit" id="actua-btn" style='background-color:#262C60;border-color:#262C60;' value="Actualizar" class="btn btn-success btn-block">
 								</div>	
 							</div>
 				</form>

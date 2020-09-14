@@ -138,9 +138,14 @@ class PersonaController extends Controller
             $name = str_slug($request->input('nombre')).'_'.time();
             $folder = '/images/users/';
             $filePath = $folder . $name. '.' . $image->getClientOriginalExtension();
+            //$path = public_path($filePath);
+            //Image::make($image)->fit(300, 300)->save($path);
+            //$destinationPath = substr($path, 33);
+
+            
             $path = public_path($filePath);
             Image::make($image)->fit(300, 300)->save($path);
-            $destinationPath = substr($path, 33);
+            $destinationPath = $filePath;
         }
 
         $persona =Persona::where('user_id', $id)

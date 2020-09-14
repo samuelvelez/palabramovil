@@ -85,7 +85,7 @@ a, a:hover, a:active{ outline:0px !important}
 /* Primary Styles
 ---------------------------------*/
 body {
-	background: #262C60;
+	background: rgb(241, 136, 53);/*#262C60;*/
 	/*#fcc65a;*/
 	/*background-color: red;*/
 	/*font-family: 'Open Sans', sans-serif;*/

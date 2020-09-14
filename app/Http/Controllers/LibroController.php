@@ -195,7 +195,7 @@ class LibroController extends Controller
             'titulo'  => request('titulo'),
             'descripcion'  => request('descripcion'),
             'estado'  => 'disponible',
-            'imagen'    => $destinationPath,
+            'imagen'    => '/images/libros/'.$fileName,
             'autor'  => request('autor'),
             'paginas'  => request('paginas'),
             //'persona_id'  => Auth::user()->id
@@ -270,12 +270,21 @@ class LibroController extends Controller
             $destinationPath = $libro->imagen;
             
         }else{
-            $name = str_slug($request->input('titulo')).'_'.time();
+            /*$name = str_slug($request->input('titulo')).'_'.time();
             $folder = '/images/libros/';
-            $filePath = $folder . $name. '.' . $image->getClientOriginalExtension();
+            $filePath =  $name. '.' . $image->getClientOriginalExtension();
             $path = public_path($filePath);
             Image::make($image)->fit(300, 300)->save($path);
-            $destinationPath = substr($path, 33);
+            //$destinationPath = substr($path, 33);
+            $destinationPath = '/images/libros/'.$filePath;*/
+            $date = date('Y-m-d'); 
+            $file = $request->file('imagen');
+            $extension = $file->getClientOriginalExtension();
+            $fileName = $titulo .'_'. $date . '.' . $extension;
+            //$destinationPath = 'public/image/libros';
+            $path = 'images/libros/'.$fileName;
+            Image::make($file)->fit(300, 300)->save($path);
+            $destinationPath = '/images/libros/'.$fileName;
         }
         //DB::table('libros')->where('id' ,'=', $id)->update('titulo' => $titulo);
         //DB::table('libros')->where('id', $id)->update(['titulo' => $titulo]);

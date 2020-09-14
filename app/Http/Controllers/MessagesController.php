@@ -82,6 +82,7 @@ class MessagesController extends Controller
      */
     public function create($id)
     {
+        $id   = Crypt::decrypt($id);
         $notificacions = DB::table('notificacions')->where('id', '=' , $id)->first();
         //dd($notificacions->id_receptor);
         $users = User::where('id', '=', $notificacions->id_receptor)->get();

@@ -46,7 +46,7 @@
                                                            value="{{ old('subject') }}">
                                                 </div>-->
                                                 <!-- Message Form Input -->
-                                                <input type="text" name="notificacion" value="{{$notificacions->id}}">
+                                                <input type="hidden" name="notificacion" value="{{$notificacions->id}}">
                                                 <div class="form-group">
                                                     <!--<label class="control-label">Mensaje</label>-->
                                                     <textarea name="message" class="form-control">{{ old('message') }}</textarea>
@@ -54,7 +54,7 @@
                                                 @if($users->count() > 0)
                                                     <div class="checkbox" id="mensaje-usuario-destinario2">
                                                         @foreach($users as $user)
-                                                            <label title="{{ $user->name }}"><input checked type="checkbox" name="recipients[]"
+                                                            <label title="{{ $user->name }}"><input checked type="checkbox" name="recipients[]" readonly="readonly"
                                                                                                     value="{{ $user->id }}">{!!$user->name!!}</label>
                                                         @endforeach
                                                     </div>
