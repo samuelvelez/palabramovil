@@ -32,6 +32,7 @@ Route::get('/callback/{provider}', 'SocialController@callback');
 
 Route::resource('/libro', 'LibroController');
 Route::get('/libros', 'LibroController@libros')->name('libros');
+Route::get('/donaciones', 'LibroController@donacion')->name('donaciones');
 Route::get('/resultados', 'LibroController@resultados')->name('resultados');
 
 // Routes for guests only

@@ -114,6 +114,7 @@ $(document).ready(function(){
                             <li class="nav-item"><a class="nav-link" href="{{ route('libros') }}">Libros</a></li>                                  
                             <!--<li class="nav-item"><a class="nav-link" href="#">Conoce más</a></li>-->
                             <li class="nav-item"><a class="nav-link" href="http://www.palabralab.com/" target="_blank">Palabralab</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('donaciones') }}">Donaciones</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
                             </li>
@@ -127,7 +128,7 @@ $(document).ready(function(){
                             <li class="nav-item"><a class="nav-link" href="{{ route('libros') }}">Libros</a></li>                                                 
                             <!--<li class="nav-item"><a class="nav-link" href="#">Conoce más</a></li>-->
                             <li class="nav-item"><a class="nav-link" href="http://www.palabralab.com/" target="_blank">Palabralab</a></li>
-                             
+                            <li class="nav-item"><a class="nav-link" href="{{ route('donaciones') }}">Donaciones</a></li>
                             <li class="nav-item dropdown submenu-principal">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="fas fa-user"></i>
                                     {{ Auth::user()->name }} <span class="caret"></span>

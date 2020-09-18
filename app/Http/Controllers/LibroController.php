@@ -304,4 +304,10 @@ class LibroController extends Controller
     {
         //
     }
+
+    public function donacion(){
+
+
+        return view('donacion');
+    }
 }

@@ -251,8 +251,71 @@ body #libros-sec{
     background-size: cover;
     position: relative;
 }
+
+.bg_white{
+    background-color: #ffffff;
+}
+.bg_darkblue{
+    background-color: #262e5e;
+}
+.c_white{
+    color: #ffffff;
+}
+
+.c_blue{
+    color: #262e5e;
+}
+.h300{
+    height:300px;
+}
+.st_300{
+    padding:2rem 4vw;
+    text-align:center;
+}
+
+.fs_20{
+    font-size:20px;
+}
+.fs_16{
+    font-size:16px;
+}
+.b_orange{
+    border:5px solid #ed8637;
+}
+
+.p3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    padding: 3rem;
+    margin-left: 1rem;
+}
+.bg_gray{
+    background: #6f6e6e;
+}
+
+.c_orange{
+    color:#ed8637;
+}
+
+.t_donacion{
+    color:#ed8637;
+    border:5px solid #ed8637;
+    max-width: 500px;
+    margin: 0 auto;
+}
 body #biblioteca-sec{
     background-color: #fcc65a;
+}
+.arright:after{
+    content: '\f002';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin-left:5px;
+    color:red; 
 }
 .conten-img-lateral{
    
