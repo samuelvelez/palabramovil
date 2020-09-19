@@ -138,7 +138,8 @@ transform: skew(0deg, -5deg);
 	overflow: hidden;
 	background-color: #262c60 !important;
 	margin-top: 30px;
-	height: 400px;
+    height: 300px;
+    width: calc(100% - 3em);
 
 }
 .img-palabra-3-semi{
@@ -305,6 +306,30 @@ body #libros-sec{
     max-width: 500px;
     margin: 0 auto;
 }
+
+.btn_buscar {
+    position: absolute;
+    top: 15px;
+    background: transparent;
+    right:15px;
+}
+li.nav-item>a.nav-link:hover {
+    border-bottom: 1px solid #fff;
+}
+.img_principal{
+    position: relative;
+    top: -140px;
+    z-index: 100;
+}
+
+@media (max-width: 960px) {
+    .img_principal {
+        top: 0px;
+    }
+  }
+.bb_orange{
+    border-bottom:3px solid #ed8637;
+}
 body #biblioteca-sec{
     background-color: #fcc65a;
 }
@@ -447,7 +472,7 @@ body #biblioteca-sec{
 .pasos-left-box2 p{
     margin-top: 40px;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     font-family: 'Brandon_medium';
 
@@ -475,20 +500,19 @@ body #biblioteca-sec{
 
 }
 .img-inicio-pasos-right{
-    width: 650px;
+    width: 80%;
     position: absolute;
     z-index: 999;
     margin-top: 20px;
-    margin-left: -100px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: -50px;
+    
 }
 .img-inicio-pasos-left{
-    width: 650px;
+    width: 80%;
     position: absolute;
     z-index: 999;
     margin-top: 20px;
     right: 0;
-    margin-right: -100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .main-section-left{
@@ -986,7 +1010,7 @@ letter-spacing: 1px;
     color:white;
 }
 .form-buscar-blanco-home{
-     width: 90% !important;
+     width: 100% !important;
      border-color: white;
      height: 40px;
 }
@@ -1185,8 +1209,7 @@ background: linear-gradient(135deg, #fefefe 0%, #E8E8E8 100%);
 }
 .contenedor-slider-inside{
 	text-align: center;
-	margin-top: 20%;
-	padding: 50px;
+	padding: 50px 0px;
 	
 }
 .buscador-slider{
@@ -1207,16 +1230,18 @@ background: linear-gradient(135deg, #fefefe 0%, #E8E8E8 100%);
     font-family: 'Brandon_light_italic';
     line-height: 1;
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 5vh;
     text-align: left;
     color: white;
 }
 .texto-slider	{
-    font-family: 'Brandon_medium';
+    font-family: 'Brandon_light';
     font-weight: 100;
 	/*font-family: 'Brandon_light_italic';*/
 	line-height: 1;
-	color: white;
+    color: white;
+    font-size:1.5vw;
+    margin-right: 5px;
 }
 .contenedor-texto-inicio{
     padding: 40px 0 60px 0;
@@ -1231,12 +1256,12 @@ background: linear-gradient(135deg, #fefefe 0%, #E8E8E8 100%);
     font-size: 36px;
 }
 .text-bold-inside{	
-	font-size: 36px;
+	font-size: 1.5vw;
 	font-family: 'Brandon_bold';
 	color: white;
 }
 .text-bold-inside-inicio{
-    font-size: 30px;
+    font-size: 4vh;
     font-family: 'Brandon_bold';
     color: white;
      text-align: left;

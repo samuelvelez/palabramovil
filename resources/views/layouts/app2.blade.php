@@ -67,11 +67,11 @@ $(document).ready(function(){
 </head>
 <body>
     <div id="app" >
-        <nav class=" navbar navbar-expand-md navbar-dark" style="background-color:#f18835;z-index:99;">
+        <nav class=" navbar navbar-expand-md navbar-dark" style="background-color:#262C60;z-index:99;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!--{{ config('app.name', 'Laravel') }}-->
-                    <img style="width: 300px;" src="/images/logo-blanco.png">
+                    <img style="width: 300px;" src="/images/logo_new.png">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

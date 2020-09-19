@@ -25,20 +25,19 @@
 <div class="container-fluid contenedor-slider" >
     
     <div class="row">
-    <div class="col-md-6 col-sm-6 hidden-xs hidden-sm">
-				<img class="animatbale fadeInUp" src="images/BANNER-1-INICIO-min.png">
+    <div class="col-sm-12 col-md-6 col-sm-6 hidden-xs hidden-sm">
+				<img class="animatbale fadeInUp img_principal" src="images/BANNER-1-INICIO-min.png">
 			</div>
-			<div class="col-md-6 col-sm-6">
+			<div class="col-sm-12 col-md-6 col-sm-6">
 				 
                 <div class="contenedor-slider-inside" >
 
                 		{!! Form::open(['route' => 'resultados', 'method' => 'GET','class' => 'form-inline my-2 my-lg-0','role' => 'search']) !!}
 						<div class="container-fluid row">
-						<div class="col-11">
+						<div class="col-12">
 						{!! Form::text('name', null, ['class' => 'form-control mr-sm-1 form-buscar-blanco-home', 'placeholder' => 'Busca un libro, género o autor/a']) !!}
-						</div>
-						<div class="col-1">
-						<button class="btn my-2 my-sm-0 btn-iniciosesion-3" type="submit"><i class="fas fa-search"></i></button>
+						
+						<button class="btn my-2 my-sm-0  btn_buscar" type="submit"><i class="fas fa-search"></i></button>
 						</div>
 						</div>
                             
@@ -50,7 +49,16 @@
                         
                         
                     <div class="contenedor-texto-inicio"> 
-					<p class="texto-slider">BIENVENIDO A <span class="text-bold-inside">PALABRA MÓVIL</span></p>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12 col-sm-6 col-xl-6 text-right p-0">
+									<p class="texto-slider">BIENVENIDO A</p>
+								</div>
+								<div class="col-12 col-sm-6 col-xl-6 text-left bb_orange p-0">
+								<p class="texto-slider"><span class="text-bold-inside">PALABRA MÓVIL</span></p>				
+								</div>
+							</div>
+						</div>
 					<p class="texto-slider-inicio">La primera web en la que puedes encontrar<br><span class="text-bold-inside-inicio">el libro que buscas y que alguien más tiene para ti</span></p>
 					</div>
 					@guest
@@ -178,8 +186,8 @@
 										</div>							
 									</div>							
 								</div>
-								<div class="col-md-9 pasos-left-box2">
-									<p>Regístrate con Facebook o tu <br>correo y completa tu perﬁl</p>
+								<div class="col-md-8 pasos-left-box2">
+									<p>Regístrate con Facebook o tu correo y completa tu perﬁl</p>
 									<span>*tu información no será compartida con nadie</span>
 								</div>
 							</div>
@@ -246,7 +254,7 @@
 									</div>							
 								</div>
 								<div class="col-md-9 pasos-right-box2">
-									<p>Sube una foto de el/los libros que <br>quieras agregar a tu biblioteca </p>
+									<p>Sube una foto de el/los libros que quieras agregar a tu biblioteca </p>
 									
 								</div>
 							</div>
@@ -278,9 +286,9 @@
 										</div>							
 									</div>							
 								</div>
-								<div class="col-md-9 pasos-left-box2">
-									<p>Regístrate con Facebook o tu <br>correo y completa tu perﬁl</p>
-									<span>*tu información no será compartida con nadie</span>
+								<div class="col-md-8 pasos-left-box2">
+									<p>Utiliza el buscador o mira en la sección de libros para enconrtar el que buscas.</p>
+									
 								</div>
 							</div>
 

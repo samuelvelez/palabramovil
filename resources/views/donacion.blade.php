@@ -37,7 +37,7 @@
     <div class="container bg_white mb-5">
         <div class="row p-5">
             <div class="col-sm-6">
-            <img style="position:absolute;right:0;top:100px;width:280px;height:100px" src="../images/users/default.jpg">                  
+            <img style="position:absolute;right:0;top:100px;height:100px" src="../images/donaciones.png">                  
             </div>
             <div class="col-sm-6 p-5 bg_darkblue c_white fs_20 text-justify">
             Es un espacio cultural que promueve la lectura desde 2010 y por este motivo, pensando en mediar entre libros y lectores comenzamos este proyecto.<br/>
