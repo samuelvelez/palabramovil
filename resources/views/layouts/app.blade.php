@@ -84,25 +84,7 @@ $(document).ready(function(){
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
- {!! Form::open(['route' => 'resultados', 'method' => 'GET','class' => 'form-inline my-2 my-lg-0','role' => 'search']) !!}
-          <div class="input-group ">
-            <!--<div class="input-group-prepend">
-              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#262C60;color:white;" aria-haspopup="true" aria-expanded="false">Categorias</button>
-              <div class="dropdown-menu">
-            
-                  <a class="dropdown-item" href="#">categoria1</a>
-               
-              </div>
-            </div>-->
-           
-            <!--<input type="text" class="form-control" placeholder="Busca un libro, género o autor/a" aria-label="Text input with dropdown button">-->
-            {!! Form::text('name', null, ['class' => 'form-control form-buscar-blanco-inicio', 'placeholder' => 'Busca un libro, género o autor/a']) !!}
-              <div class="input-group-append">
-                <button class="btn" style="background-color: white;color:#262C60;" type="submit" ><i class="fas fa-search"></i></button>
-              </div>
-               
-          </div>
-         {!! Form::close() !!}
+ 
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -1,20 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 @section('content')
 
 
-<div class="" style="background-color: #F18835;padding:50px;"> </div>
-<section class="agregalibros-registro " style="background-color:#F18835;padding-top: 1px;padding-bottom: 10px;">
-		<!--main-section alabaster-start-->
-		<div class="" style="background-color: #F18835">
-			<div class="container">
-                <div class="row">
-                    <div class="mx-auto">
-                       
-                    </div>                  
-                </div>
-			</div>
-		</div>	
-</section>
+
 <!--
 <section class="container-fluid giro-libros" style="z-index: 10;">
     <div class="row segundo-giro">
@@ -44,14 +32,37 @@
 </section>
 -->
 
-<section id="libros-sec" class="libros-img-fondo">
+<section id="buscador" class="buscador p-5">
+<form method="GET" action="/resultados" accept-charset="UTF-8" role="search" class="form-inline my-2 my-lg-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="input-group ">
+                    <input placeholder="Busca un libro, género o autor/a" name="name" type="text" class="form-control form-buscar-blanco-inicio">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn" style="background-color: white; color: rgb(38, 44, 96);">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</section>
+<section id="libros-sec" class="libros-img-fondo mt-0">
 <div class="container-fluid" >
     <div class="row justify-content-center">
         <div class="col-md-9" style="background-color: white;">
-            <div class="header-libros">
-                <h2 style="letter-spacing: 2px;">Explora</h2>    
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs">
+        <div class="container-fliud">
+          <div class="row">
+            <div class="col-4">
+              <div class="header-libros">
+                <h2 style="letter-spacing: 2px;">Explora</h2> 
+              </div>
+            </div>
+            <div class="col-5 offset-md-3">
+            <ul class="nav nav-tabs tipos_busqueda">
                   <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#opc1" style="color:blue;">Libros</a>
                   </li>
@@ -62,6 +73,12 @@
                     <a class="nav-link" style="color:blue;" data-toggle="tab" href="#opc3">Autores</a>
                   </li>
                 </ul>
+            </div>
+          </div>
+         
+        </div>
+            <div class="header-libro">
+                
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div class="tab-pane container active card-header" id="opc1" >
@@ -103,10 +120,10 @@
                           
                           @foreach($libros as $libro)  
                           
-                          <div class="col-md-6 ">
+                          <div class="col-md-12 ">
                             <div class="row libros-contenedor">
-                              <div class="col-md-4">
-                                  <img class="mx-auto d-block" src="{{$libro->imagen}}" style="width:150px;height:150px;" >
+                              <div class="col-md-3">
+                                  <img class="mx-auto d-block" src="{{$libro->imagen}}" style="width:150px;height:150px;    object-fit: contain;" >
                               </div>
                               <div class="col-md-5 letras-libros">
                                       <h3>{{$libro->titulo}}</h3>
@@ -119,7 +136,7 @@
                                       </div>                                 
                                       <input type="hidden" id="custId" name="custId" value="{{$libro->id}}">
                               </div>
-                              <div class="col-md-3">
+                              <div class="col-md-4 text-center">
                               @guest
                                   <p>Te gustaría  leer el libro?</p>
                                   <a type="button" style="background-color:#262c60;color:white;" class="btn"  href="{{ route('register') }}" >Registrate</a>

@@ -1,4 +1,4 @@
-@extends('layouts.app2')
+@extends('layouts.app')
 @section('content')
 
 <!--<section class="agregalibros-registro " style="background-color:#F18835;padding-top: 1px;padding-bottom: 10px;">
@@ -15,7 +15,7 @@
 </section>-->
 
 <section id="buscador" class="buscardor mt-5">
-<form method="GET" action="http://localhost:8000/resultados" accept-charset="UTF-8" role="search" class="form-inline my-2 my-lg-0">
+<form method="GET" action="/resultados" accept-charset="UTF-8" role="search" class="form-inline my-2 my-lg-0">
     <div class="container">
         <div class="row">
             <div class="col-sm-10 offset-sm-1">
