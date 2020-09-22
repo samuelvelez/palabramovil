@@ -56,12 +56,12 @@
         <div class="col-md-9" style="background-color: white;">
         <div class="container-fliud">
           <div class="row">
-            <div class="col-4">
+            <div class="col-7">
               <div class="header-libros">
                 <h2 style="letter-spacing: 2px;">Explora</h2> 
               </div>
             </div>
-            <div class="col-5 offset-md-3">
+            <div class="col-5 d-flex flex-row-reverse">
             <ul class="nav nav-tabs tipos_busqueda">
                   <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#opc1" style="color:blue;">Libros</a>
@@ -131,9 +131,13 @@
                                       <!--<p>{{$libro->descripcion}}</p>   -->
                                       <!--<p>Subido por: <a href="{{ route('perfilpublico', $libro->user_id) }}">{{$libro->name}}</a></p> -->
                                       <div class="row letras-libros-imagen">
-                                       
-                                        <p>Subido por:<a href="{{ route('perfilpublico', $libro->name) }}"> {{$libro->name}}</a></p> 
-                                      </div>                                 
+                                        <div class="col-2">
+                                          <img src="/images/users/defaults.jpg" />
+                                        </div>
+                                        <div class="col-10 pl-0">
+                                          <div class="txt_subido">Subido por:<br><a href="{{ route('perfilpublico', $libro->name) }}"> {{$libro->name}}</a></div> 
+                                        </div>                                 
+                                      </div>
                                       <input type="hidden" id="custId" name="custId" value="{{$libro->id}}">
                               </div>
                               <div class="col-md-4 text-center">

@@ -26,7 +26,7 @@
     
     <div class="row">
     <div class="col-sm-12 col-md-6 col-sm-6 hidden-xs hidden-sm">
-				<img class="animatbale fadeInUp img_principal" src="images/BANNER-1-INICIO-min.png">
+				<img class="animatbale fadeInUp img_principal" src="images/El-niño-SIN-FONDO.png">
 			</div>
 			<div class="col-sm-12 col-md-6 col-sm-6">
 				 

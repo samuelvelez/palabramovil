@@ -43,14 +43,37 @@
 </section>-->
 
 
-<section id="libros-sec" class="libros-img-fondo" style="padding-bottom: 50px;">
+<section id="libros-sec2" class="libros-img-fondo" style="padding-bottom: 50px;">
 <div class="container-fluid" >
     <div class="row justify-content-center">
         <div class="col-md-9" style="background-color: white;">
-            <div class="header-libros">
+        <div class="container-fliud">
+          <div class="row">
+            <div class="col-7">
+              <div class="header-libros">
                 <h2 style="letter-spacing: 2px;">Resultados de tu busqueda:</h2> 
+              </div>
+            </div>
+            <div class="col-5 d-flex flex-row-reverse">
+            <ul class="nav nav-tabs tipos_busqueda">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#opc1" style="color:blue;">Libros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="color:blue;" class="nav-link" data-toggle="tab" href="#opc2">Géneros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:blue;" data-toggle="tab" href="#opc3">Autores</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+         
+        </div>    
+        <div class="header-libros">
+                <!--<h2 style="letter-spacing: 2px;">Resultados de tu busqueda:</h2> -->
 
-                <!-- Nav tabs -->
+                <!-- Nav tabs 
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#opc1" style="color:blue;">Libros</a>
@@ -62,7 +85,7 @@
                     <a class="nav-link" style="color:blue;" data-toggle="tab" href="#opc3">Autores</a>
                   </li>
                 </ul>
-                <!-- Tab panes -->
+                -- Tab panes -->
                 <div class="tab-content">
                   <div class="tab-pane container active card-header" id="opc1" >
                       <ul class="nav">

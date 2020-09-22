@@ -108,9 +108,17 @@ $(document).ready(function(){
                             <li class="nav-item"><a class="nav-link" href="http://www.palabralab.com/" target="_blank">Palabralab</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('donaciones') }}">Donaciones</a></li>
                             <li class="nav-item dropdown submenu-principal">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="fas fa-user"></i>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <div class="row">
+                                        <div class="col-2 p-0">
+                                            <img src="/images/users/defaults.jpg" width="50px"/>
+                                        </div>
+                                        <div class="col-10 pl-0 pt-0 pb-0 text-center n_usuario">
+                                            {{ Auth::user()->name }} <span class="caret"></span>
+                                        </div>
+                                    </div>
+                                            
+                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <h5>Panel de control</h5>
