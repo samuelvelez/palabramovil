@@ -29,7 +29,7 @@
                   @include('layouts.menudashboard')
                 </div>
                 <div class="card-body">
-                <p> $libros </p>
+                <!--<p> $libros </p>-->
                 @if(is_null($libros)) 
                 <div class="col-md-12">  
                     <p>No hay registro !!</p>

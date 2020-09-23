@@ -15,7 +15,7 @@
         </div>  
 </section>
 
-<section id="libros-sec" class="libros-img-fondo">
+<section id="libros-sec2" class="libros-img-fondo">
 <div class="container-fluid" >
     <div class="row justify-content-center">
         <div class="col-md-9" style="background-color: white;">

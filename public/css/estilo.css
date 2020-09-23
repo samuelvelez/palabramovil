@@ -240,7 +240,7 @@ input[type="text"]::placeholder { /* Firefox, Chrome, Opera */
   content:url('../img/flecha.png'); 
 }*/
 .libros-img-fondo{
-    margin-top: -100px;
+    margin-top: -50px;
 }
 body #libros-sec{
     background: rgb(38, 44, 96);
@@ -282,6 +282,10 @@ body #libros-sec{
 }
 .b_orange{
     border:5px solid #ed8637;
+}
+
+.card-header-pills>li>a.nav-link.active {
+    color: white !important;
 }
 
 .p3 {
@@ -356,7 +360,9 @@ a.nav-link.active {
     color: #8f8aa8;
     background: white;
 }
-
+a#navbarDropdown:hover {
+    background: transparent;
+}
 .n_usuario:after {
     display: inline-block;
     width: 0;

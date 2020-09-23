@@ -50,8 +50,8 @@
     </div>
 </form>
 </section>
-<section id="libros-sec" class="libros-img-fondo mt-0">
-<div class="container-fluid" >
+<section id="libros-sec" class="libros-img-fondo mt-0 pb-5">
+<div class="container-fluid pb-5" >
     <div class="row justify-content-center">
         <div class="col-md-9" style="background-color: white;">
         <div class="container-fliud">

@@ -71,7 +71,7 @@ $(document).ready(function(){
 </head>
 <body>
     <div id="app" >
-        <nav class=" navbar navbar-expand-md navbar-dark" style="background-color:#f18835;z-index:99;">
+        <nav class=" navbar navbar-expand-md navbar-dark" style="z-index:99;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!--{{ config('app.name', 'Laravel') }}-->
