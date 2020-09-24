@@ -41,7 +41,7 @@
             </div>
             <div class="col-sm-6 p-5 bg_darkblue c_white fs_20 text-justify">
             Es un espacio cultural que promueve la lectura desde 2010 y por este motivo, pensando en mediar entre libros y lectores comenzamos este proyecto.<br/>
-            Agradecemos las donaciones que se han realizado y aceptamos gustosos los libros quq quieran donarpara hacer crecer esta iniciativa.
+            Agradecemos las donaciones que se han realizado y aceptamos gustosos los libros que quieran donar para hacer crecer esta iniciativa.
             </div>
         </div>
         <div class="row mt-5">
@@ -122,7 +122,7 @@
         </div>
         <div class="row p-5">
             <div class="col-12 text-center bg_gray fs_20 c_white pl-5 pr-5 pt-3 pb-3">
-                Si deseas contactarnos para hacer uan donación, y formar partw de esta iniciativa, o para solicitar material para tu biblioteca puedes escribir a ade@palabralab.com.
+                Si deseas contactarnos para hacer uan donación, y formar parte de esta iniciativa, o para solicitar material para tu biblioteca puedes escribir a ade@palabralab.com.
             </div>
         </div>
     </div>

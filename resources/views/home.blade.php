@@ -401,6 +401,7 @@
 <!--************************** Seccion Libros **************************-->
 	<section class="home-sec-libros  primer-giro">
 		<!--main-section alabaster-start-->
+		@if(count($libros)>4)
 		<div class="segundo-giro">
 			<div class="container">
 				<div class="row animatable fadeInUp">
@@ -410,6 +411,63 @@
 						<h2>POPULARES</h2>
                         </div>
 						<!--PRIMERA IMAGEN-->
+						<div class="img-palabra img-sect-2-home" >
+							<div class="img-palabra-3" style="height: 400px;">
+								<img class="img-home-destacado-inicio"  src="{{$libros[0]->imagen}}">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row col-md-12">
+							<div class="col-md-6" style='padding:10px;'>
+								<div class="img-palabra-semi" >
+									<div class="img-palabra-3-semi" >	
+										<img class="img-home-semidestacado-inicio"  src="{{$libros[1]->imagen}}">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6" style='padding:10px;'>
+									<div class="img-palabra-semi" >
+										<div class="img-palabra-3-semi">	
+											<img class="img-home-semidestacado-inicio"  src="{{$libros[2]->imagen}}">
+										</div>
+									</div>
+							</div>
+							<div class="col-md-6" style='padding:10px;'>
+									<div class="img-palabra-semi" >
+										<div class="img-palabra-3-semi">	
+											<img class="img-home-semidestacado-inicio"  src="{{$libros[3]->imagen}}">
+										</div>
+									</div>
+							</div>
+							<div class="col-md-6" style='padding:10px;'>
+								<div class="img-palabra-semi" >
+									<div class="img-palabra-3-semi">	
+										<img class="img-home-semidestacado-inicio"  src="{{$libros[4]->imagen}}">
+									</div>
+								</div>
+							</div>
+								
+						</div>
+						
+					</div>
+				</div>
+				<div class="row" style="padding-top: 80px;">
+					<a  href="{{ route('libros') }}" class="btn btn-largo">VER MÁS</a>
+				</div>
+			</div>
+		</div>
+
+		@endif
+		<!--<div class="segundo-giro">
+			<div class="container">
+				<div class="row animatable fadeInUp">
+					<div class="col-md-4 ">
+                        <div class="texto-sect-2-home">
+						<h3>MÁS</h3>
+						<h2>POPULARES</h2>
+                        </div>
+						--PRIMERA IMAGEN-
 						<div class="img-palabra img-sect-2-home" >
 							<div class="img-palabra-3" style="height: 400px;">
 								
@@ -454,12 +512,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="row" style="padding-top: 80px;">
-					<a  href="{{ route('libros') }}" class="btn btn-largo">VER MÁS</a>
-				</div>
+				
 				
 			</div>
-		</div>
+		</div>-->
 	</section>
 	<section class="container">
 		<div class="row home-group-botones">

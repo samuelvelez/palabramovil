@@ -19,9 +19,10 @@
 //Route::post('persona/store', 'PersonaController@store');
 
 // Routes for anyone
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index2');//function () {
+	//return view('home');
+	//Route::get('/home', 'HomeController@index');
+//});
 Route::get('/politicasprivacidad', function () {
     return view('politicasprivacidad');
 });
@@ -80,4 +81,3 @@ Route::group(['middleware' => 'auth'], function() {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
